@@ -32,6 +32,7 @@ void  IKKJ::solveIk(float X, float Y, float Z){
 
 
   //Inverse K
+
   float L0    = calculateL0(z,  H,  x,  y);
   float cosA  = calculateCosA(L2, L0, L1);
   float cosB  = calculateCosB(L1, L2, L0);
@@ -42,6 +43,7 @@ void  IKKJ::solveIk(float X, float Y, float Z){
   gama  = calculateGamma(x, y);
 
   //Forward K
+
   LS  = calculateLs(L1, L2, alpha,  beta);
   cX  = calculateCx(LS, gama);
   cY  = calculateCy(LS, gama);
@@ -49,11 +51,13 @@ void  IKKJ::solveIk(float X, float Y, float Z){
 
 }
 
-//Retreive angles radians
+//Retreive angles in radians
 
   float IKKJ::getAlpha(){return alpha;}
   float IKKJ::getBeta(){return  beta;}
   float IKKJ::getGamma(){return gama;}
+
+//Retreive angles in degrees
 
   float IKKJ::getAngleAlpha(){return  alpha * 180/PI;}
   float IKKJ::getAngleBeta(){return beta  * 180/PI;}
