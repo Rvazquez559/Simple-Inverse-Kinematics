@@ -1,0 +1,29 @@
++++++++++++++++++++++++++++++++++
+class 
++++++++++++++++++++++++++++++++++
+IKKJ	KEYWORD1
++++++++++++++++++++++++++++++++++
+FUNCTIONS
++++++++++++++++++++++++++++++++++
+solveIk  KEYWORD2
+getAlpha  KEYWORD2
+getBeta  KEYWORD2
+getGamma  KEYWORD2
+getAngleAlpha  KEYWORD2
+getAngleBeta  KEYWORD2
+getAngleGamma  KEYWORD2
+getCX  KEYWORD2
+getCY  KEYWORD2
+getCZ  KEYWORD2
+calculateL0  KEYWORD2
+calculateCosA  KEYWORD2
+calculateCosB  KEYWORD2
+calculateTanD  KEYWORD2
+calculateAlpha  KEYWORD2
+calculateBeta  KEYWORD2
+calculateGamma  KEYWORD2
+calculateLs  KEYWORD2
+calculateCx  KEYWORD2
+calculateCy  KEYWORD2
+calculateCz  KEYWORD2
++++++++++++++++++++++++++++++++++
