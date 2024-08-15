@@ -2,25 +2,21 @@
 
 
 #include <IKKJ.h>
-#include <MKS57_CAN.h>
+#include <MKS57_CAN.h>//Download this library from GSW repo
 
 
 
-IKKJ  arm(220.0,  220.0,  50.0);//Set arm lengths adn base heigth
+IKKJ  arm(220.0,  220.0,  50.0);//Set arm lengths adn base heigth in mm
 
-MKS57_CAN driver1(4,  5,  1000, 10, 10);//Creat stepper driver
-
+MKS57_CAN driver1(4,  5,  1000, 10, 10);//Create stepper driver
 
 void setup() {
 Serial.begin(115200);
 
 driver1.begin();
-
 driver1.enableMotor(0x1, 0x1);
 driver1.setZero(0x1);
 delay(2000);
-
-
 
 }
 
