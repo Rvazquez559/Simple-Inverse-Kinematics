@@ -34,7 +34,7 @@ for(int i = 150;  i < 200;  i++){
   Serial.print("Degree  Alpha: "); Serial.println(arm.getAngleAlpha());
   Serial.print("Degree  Beta: "); Serial.println(arm.getAngleBeta());
   Serial.print("Degree  Gamma: "); Serial.println(arm.getAngleGamma());
-  float angleHex  = arm.getAngleAlpha() * 45.51;
+  float angleHex  = arm.getAngleAlpha() * 45.51;//Relationship between max value and step number/degrees
   driver1.sendPositionMode4Message(0x1, 300, 2, angleHex);
 
   Serial.print("X: "); Serial.println(arm.getCX());
